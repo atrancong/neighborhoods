@@ -10,5 +10,9 @@ def main():
 def index():
   return render_template('mapless.html')
 
+@app.route('/leafletQuickStart')
+def leaflet():
+  return render_template('leafletQuickStart.html')
+
 if __name__ == '__main__':
   app.run(port=33507)
